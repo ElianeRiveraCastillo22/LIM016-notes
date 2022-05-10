@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom"
 function Login(){
     return(
-        <p>hola Shiran</p>
+        <>
+            <p> oioweowe </p>
+            <Link to="/registro">
+                <button>Registrate</button>
+            </Link>
+        </>
     )
 }
 export default Login
