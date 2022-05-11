@@ -8,7 +8,7 @@ function Login(){
             <input type="text" />
             <input type="text" />
             <button>Iniciar sesión</button>
-            <p>¿No tienes una cuenta?<Link to="/registro">únete</Link></p>
+            <p>¿No tienes una cuenta? <Link to="registro">únete</Link></p>
             <p>o inicia sesión con:</p>
             <img src="" alt="" />
         </div>
