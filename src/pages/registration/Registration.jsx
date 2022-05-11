@@ -10,7 +10,7 @@ function Registration(){
             <input type="text" placeholder="Correo electrónico"/>
             <input type="text" placeholder="Contraseña"/>
             <button> Registrarme </button>
-            <p> ¿Ya tienes una cuenta? <Link to> Iniciar sesión </Link> </p>
+            <p> ¿Ya tienes una cuenta? <Link to="/"> Iniciar sesión </Link> </p>
             <p> O inicia sesión con: </p>
             <img src="" alt=""/>
         </div>
