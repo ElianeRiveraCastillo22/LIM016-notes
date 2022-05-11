@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../login/login.scss';
 const noteStorm= require("../../img/noteStorm.png");
 function Login(){
     return(
