@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const imgLogo = require ('../img/logo.png');
+const imgLogo = require ('../../img/noteStorm.png');
 
 function Registration(){
     return(
