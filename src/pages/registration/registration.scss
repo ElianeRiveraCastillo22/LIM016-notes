@@ -31,6 +31,7 @@ input {
     border-right: none;
     border-left: none;
     background-color: map-get(color.$background , "general" );
+    font-size: 1rem;
 }
 
 input:focus {
@@ -53,6 +54,7 @@ input:-webkit-autofill:active{
     border-radius: 10px;
     color: rgba(255, 255, 255);
     box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.25);
+    font-size: 1rem;
 }
 
 .loginContainer {
@@ -62,8 +64,27 @@ input:-webkit-autofill:active{
     height: 35%;
     row-gap: 8%;
     justify-content: center;
+    font-size: 1.1rem;
 }
 
 .logoGoogle {
     width: 9%; 
+}
+
+@media (min-width: 700px) {
+    .logoNoteStorm {
+        width: 35%;
+    }
+
+    input {
+        font-size: 1.4rem;
+    }
+
+    .btnRegister {
+        font-size: 1.4rem;
+    }
+
+    .loginContainer {
+        font-size: 1.6rem;
+    }
 }
