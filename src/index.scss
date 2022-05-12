@@ -1,9 +1,9 @@
-$background:(
-    "general" :#DCEEFB,
+$background :(
+    "general" :rgba(220 238 251 / 44%)
 );
 $text:(
-    "button":#FC6B68,
-    "text": #676767
+    "button":rgba(252, 107, 104, 0.7),
+    "text":#676767
 );
 *{
     margin: 0;

@@ -1,0 +1,73 @@
+@use '../../index.scss' as color;
+
+.containerRegistration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: map-get(color.$background , "general" );
+}
+
+.logoNoteStorm {
+    height: 30%;
+    width: 50%;
+    margin: 10% 20%;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10%;
+    height: 25%;
+    width: 100%;
+    input {
+        width: 70%;
+        height: 20%;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        background-color: map-get(color.$background , "general" );
+    }
+    button{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+input:focus {
+	outline: none;
+    background-color:#ffffff00;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.btnRegister {
+    height: 30%;
+    width: 35%;
+    border: none;
+    background-color: map-get(color.$text , "button" );
+    border-radius: 10px;
+    color: rgba(255, 255, 255);
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.25);
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35%;
+    row-gap: 8%;
+    justify-content: center;
+}
+
+.logoGoogle {
+    width: 9%; 
+}
