@@ -7,20 +7,25 @@ const imgGoogle = require('../../img/google.png')
 function Registration(){
     return(
         <div className="containerRegistration">
-            <img className="logoNoteStorm" src={imgLogo} alt=""/>
-
-            <form className="infoContainer">
-                <input type="text" placeholder="Nombre"/>
-                <input type="text" placeholder="Correo electrónico"/>
-                <input type="text" placeholder="Contraseña"/>
-                <button className="btnRegister"> Registrarme </button>
-            </form>
-
-            <div className="loginContainer">
-                <p> ¿Ya tienes una cuenta? <Link to="/"> Iniciar sesión </Link> </p>
-                <p> O inicia sesión con: </p>
-                <img className="logoGoogle" src={imgGoogle} alt=""/>
+            <div className="containerImg">
+                <img className="logoNoteStorm" src={imgLogo} alt=""/>
             </div>
+
+            <div className="formContainer">
+                <form className="infoContainer">
+                    <input type="text" placeholder="Nombre"/>
+                    <input type="text" placeholder="Correo electrónico"/>
+                    <input type="text" placeholder="Contraseña"/>
+                    <button className="btnRegister"> Registrarme </button>
+                </form>
+                
+                <div className="loginContainer">
+                    <p> ¿Ya tienes una cuenta? <Link to="/"> Iniciar sesión </Link> </p>
+                    <p> O inicia sesión con: </p>
+                    <img className="logoGoogle" src={imgGoogle} alt=""/>
+                </div>
+            </div>
+
         </div>
         
     )
