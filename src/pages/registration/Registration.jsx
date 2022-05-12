@@ -27,7 +27,6 @@ function Registration(){
             </div>
 
         </div>
-        
     )
 }
 export default Registration;

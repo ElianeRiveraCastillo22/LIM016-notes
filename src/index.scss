@@ -1,8 +1,9 @@
 $background :(
-    "general" :rgba(220, 238, 251),
+    "general" :rgba(220 238 251 / 44%)
 );
 $text:(
     "button":rgba(252, 107, 104, 0.7),
+    "text":#676767
 );
 *{
     margin: 0;
@@ -13,3 +14,4 @@ body{
     width: 100%;
     height: 100vh;
 }
+

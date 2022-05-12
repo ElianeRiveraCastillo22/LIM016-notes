@@ -1,0 +1,143 @@
+@use '../../index.scss' as color;
+.backgroundGeneral{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: map-get(color.$background, "general");
+}
+.noteStormDestock{
+    height: 0%;
+    width: 0%;
+}
+.containerLogin {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    color:map-get(color.$text , "text" );
+    background: map-get(color.$background, "general");
+}
+.logoNoteStorm{
+    height: 30%;
+    width: 50%;
+    margin: 10% 20%;
+}
+.formLogin{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    row-gap: 5%;
+    button {
+        height: 15%;
+        width: 40%;
+        border-radius: 15px;
+        background-color: #fc6b68b8;
+        border: solid 0px;
+        box-shadow: 2px 5px 10px rgb(0 0 0 / 20%);
+        font-size: 1rem;
+        font-weight: 00;
+        color: white;
+    }
+    input{
+        width: 70%;
+        height: 15%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-size: 1rem;
+        background: none;
+    }
+    input:focus{
+        outline: none;
+    }
+    div{
+        height: 15%;
+        width:70% ;
+    }
+    .recuperarContraseña{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .textLinkRegistro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 25%;
+        width: 70%;
+        justify-content: flex-end;
+    }
+    a{
+        font-weight: bolder;
+        text-decoration: none;
+        color:map-get(color.$text , "text" )
+    }
+}
+.logoGoogleLogin{
+    height: 5%;
+    width: 9%;
+    margin: auto 0% 10% 0%;
+}
+@media(min-width:600px){
+    .containerLogin{
+        width: 70%;
+        background: none;
+    }
+    .formLogin{
+        font-size: 1.4rem;
+        input{
+            font-size: 1.4rem;
+        }
+        button{
+            font-size: 1.4rem;
+        }
+    }
+}
+@media(min-width:800px){
+    .noteStormDestock {
+        height: 100%;
+        width: 50%;
+        padding: 6% 10%;
+    }
+    .containerLogin {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        .logoNoteStorm{
+            height: 0%;
+            width: 0%;
+            margin: 0% 0%;
+        }
+        .formLogin{
+            height: 90%;
+            width: 100%;
+            margin: 10% 0% 0% 0%;
+            padding: 0% 10% 0% 10%;
+            button{
+                height: 10%;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        .textLinkRegistro{
+            justify-content: center;
+        }
+        .logoGoogleLogin {
+            max-width: 5%;
+            height: 5%;
+            width: 6%;
+        }
+    }
+}

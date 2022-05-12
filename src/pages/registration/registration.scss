@@ -29,6 +29,17 @@
     row-gap: 10%;
     height: 45%;
     width: 100%;
+    input {
+        width: 70%;
+        height: 20%;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        background-color: map-get(color.$background , "general" );
+    }
+    button{
+        font-size: 1.6rem;
+    }
 }
 
 input {
