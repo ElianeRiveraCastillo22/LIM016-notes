@@ -1,0 +1,80 @@
+@use '../../index.scss' as color;
+.containerLogin {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    color:map-get(color.$text , "text" );
+    background: #f8f8f8f8;
+}
+
+.logoNoteStorm{
+
+    height: 30%;
+    width: 50%;
+    margin: 10% 20%;
+}
+.formLogin{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+    row-gap: 5%;
+    button {
+        height: 15%;
+        width: 40%;
+        border-radius: 15px;
+        background-color: #fc6b68b8;
+        border: solid 0px;
+        box-shadow: 2px 5px 10px rgb(0 0 0 / 20%);
+        font-size: 1.2rem;
+        font-weight: 00;
+        color: white;
+    }
+    input{
+        width: 70%;
+        height: 15%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-size: 1.1rem;
+        background: none;
+    }
+    input:focus{
+        outline: none;
+    }
+    div{
+        height: 15%;
+        width:70% ;
+    }
+    .recuperarContraseña{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .textLinkRegistro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 25%;
+        width: 70%;
+        justify-content: flex-end;
+    }
+    a{
+        font-weight: bolder;
+        text-decoration: none;
+        color:map-get(color.$text , "text" )
+    }
+}
+
+.logoGoogle{
+    height: 5%;
+    width: 9%;
+    margin: auto 0% 10% 0%;
+}
