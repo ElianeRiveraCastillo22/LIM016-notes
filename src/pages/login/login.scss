@@ -7,7 +7,7 @@
     justify-content: center;
     background: map-get(color.$background, "general");
 }
-.noteStormDestock{
+.noteStormDesktop{
     height: 0%;
     width: 0%;
 }
@@ -22,7 +22,7 @@
     color:map-get(color.$text , "text" );
     background: map-get(color.$background, "general");
 }
-.logoNoteStorm{
+.logoNoteStormLogin{
     height: 30%;
     width: 50%;
     margin: 10% 20%;
@@ -102,10 +102,10 @@
     }
 }
 @media(min-width:800px){
-    .noteStormDestock {
+    .noteStormDesktop {
         height: 100%;
         width: 50%;
-        padding: 6% 10%;
+        padding: 10% 9.8%;
     }
     .containerLogin {
         height: 100%;
@@ -114,7 +114,7 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        .logoNoteStorm{
+        .logoNoteStormLogin{
             height: 0%;
             width: 0%;
             margin: 0% 0%;
