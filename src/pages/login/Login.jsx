@@ -5,9 +5,9 @@ const google= require("../../img/google.png")
 function Login(){
     return(
         <div className="backgroundGeneral">
-            <img className="noteStormDestock" src={noteStorm} alt="logoNoteStorm" />
+            <img className="noteStormDesktop " src={noteStorm} alt="logoNoteStorm" />
             <div className="containerLogin">
-                <img className="logoNoteStorm" src={noteStorm} alt="" />
+                <img className="logoNoteStormLogin" src={noteStorm} alt="" />
                 <div className="formLogin">
                     <input placeholder="Correo electronico" type="text" />
                     <input placeholder="Contraseña" type="text" />

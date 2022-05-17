@@ -7,7 +7,7 @@
     justify-content: center;
     background: map-get(color.$background, "general");
 }
-.noteStormDestock{
+.noteStormDesktop{
     height: 0%;
     width: 0%;
 }
@@ -22,7 +22,7 @@
     color:map-get(color.$text , "text" );
     background: map-get(color.$background, "general");
 }
-.logoNoteStorm{
+.logoNoteStormLogin{
     height: 30%;
     width: 50%;
     margin: 10% 20%;
@@ -37,7 +37,7 @@
     font-size: 1rem;
     row-gap: 5%;
     button {
-        height: 15%;
+        height: 14%;
         width: 40%;
         border-radius: 15px;
         background-color: #fc6b68b8;
@@ -66,6 +66,7 @@
     .recuperarContraseña{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
     }
     .textLinkRegistro {
         display: flex;
@@ -74,6 +75,7 @@
         height: 25%;
         width: 70%;
         justify-content: flex-end;
+        text-align: center;
     }
     a{
         font-weight: bolder;
@@ -92,20 +94,20 @@
         background: none;
     }
     .formLogin{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         input{
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
         button{
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
     }
 }
 @media(min-width:800px){
-    .noteStormDestock {
+    .noteStormDesktop  {
         height: 100%;
         width: 50%;
-        padding: 6% 10%;
+        padding: 11.5% 9.5%;;
     }
     .containerLogin {
         height: 100%;
@@ -114,7 +116,7 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        .logoNoteStorm{
+        .logoNoteStormLogin{
             height: 0%;
             width: 0%;
             margin: 0% 0%;
@@ -125,7 +127,7 @@
             margin: 10% 0% 0% 0%;
             padding: 0% 10% 0% 10%;
             button{
-                height: 10%;
+                height: 8%;
             }
             p{
                 text-align: center;
