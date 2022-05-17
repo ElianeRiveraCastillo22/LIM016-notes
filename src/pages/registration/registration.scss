@@ -29,32 +29,30 @@
     row-gap: 10%;
     height: 45%;
     width: 100%;
-    input {
-        width: 70%;
-        height: 20%;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        background-color: map-get(color.$background , "general" );
-    }
-    button{
-        font-size: 1.6rem;
-    }
-}
+        input {
+            width: 70%;
+            height: 20%;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            background: none;
+        }
 
-input {
-    width: 70%;
-    height: 20%;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    background-color: map-get(color.$background , "general" );
-    font-size: 1rem;
-}
+        input:focus {
+            outline: none;
+            background-color:#ffffff00;
+        }
 
-input:focus {
-	outline: none;
-    background-color:#ffffff00;
+        .btnRegister {
+            height: 30%;
+            width: 35%;
+            border: none;
+            background-color: map-get(color.$text , "button" );
+            border-radius: 10px;
+            color: rgba(255, 255, 255);
+            box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.25);
+            font-size: 1rem;
+        }
 }
 
 input:-webkit-autofill,
@@ -64,16 +62,7 @@ input:-webkit-autofill:active{
     transition: background-color 5000s ease-in-out 0s;
 }
 
-.btnRegister {
-    height: 30%;
-    width: 35%;
-    border: none;
-    background-color: map-get(color.$text , "button" );
-    border-radius: 10px;
-    color: rgba(255, 255, 255);
-    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.25);
-    font-size: 1rem;
-}
+
 
 .loginContainer {
     display: flex;
@@ -83,6 +72,11 @@ input:-webkit-autofill:active{
     row-gap: 8%;
     justify-content: flex-end;
     font-size: 1.1rem;
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color:map-get(color.$text , "text" )
+        }
 }
 
 .logoGoogle {
@@ -139,13 +133,13 @@ input:-webkit-autofill:active{
     .infoContainer {
         row-gap: 14%;
         height: 50%;
+        
+            .btnRegister {
+                font-size: 1.2rem;
+            }
     }
 
     input {
-        font-size: 1rem;
-    }
-
-    .btnRegister {
         font-size: 1rem;
     }
 
@@ -153,7 +147,7 @@ input:-webkit-autofill:active{
         display: flex;
         justify-content: flex-end;
         height: 50%;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
